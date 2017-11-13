@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+p{
+    background-color:  pink;
+}
+
+.panel,
+.panel-default,
+.randomPanel {
+    height: 150px;
+    background-color: green;
+
+}
+
+
+.panel,
+.panel-default,
+.resultPanel {
+    height: 150px;
+    background-color: green;
+}
+
+.thumbnail{
+    height: 100px;
+}
+
+.col-xs-2,
+.pictureFrame{
+    width: 10%;
+}
+
+
+.resultPanel{
+    height: 10%;
+}

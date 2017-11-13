@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector</h1>
+        <h3 class="text-center">Choose the right crystal to win this game!! </h3>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-5">
+                <p> You will be given a random number at the start of the game.
+                    <br>
+                    <br> There are four crystals below. By clicking on a crystal you will add a speicic amount of points to your
+                    total score.
+                    <br>
+                    <br> You win the game by matching your total score to random number, you lose the game if your total score
+                    goes above the random number.
+                    <br>
+                    <br> The value of each crystal is hidden from you until you click on it.
+                    <br>
+                    <br> Each time when the game starts , the game will change the values of each crystal.
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel panel-default randomPanel">
+                    <div class="panel-body">
+                        <h1 id="randomNumber"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="panel panel-default resultPanel">
+                            <div class="panel-body">
+                                <h4 id="gameStatus">
+                                    <h3 id="gameStatusResult"> </h3>
+                                </h4>
+                                <h4 id="wins">wins
+                                    <h5 id="winCount"> </h5>
+                                </h4>
+                                <h4 id="losses">losses
+                                    <h5 id="lossCount"> </h5>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2 pictureFrame">
+                <a class="thumbnail">
+                    <img id="ruby" src="assets/images/Ruby.png" alt="Ruby" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="col-xs-2 pictureFrame">
+                <a class="thumbnail">
+                    <img id="crystalGreen" src="assets/images/crystalGreen.jpg" alt="Green Crystal" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="col-xs-2 pictureFrame">
+                <a class="thumbnail">
+                    <img id="crystalPurple" src="assets/images/crystalPurple.jpg" alt="Pruple Crystal" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="col-xs-2 pictureFrame">
+                <a class="thumbnail">
+                    <img id="diamond" src="assets/images/diamond.jpeg" alt="diamond" width="100px" height="100px">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel panel-default resultPanel">
+                    <div class="panel-body">
+                        <h1 id="result"> Total result:</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1 id="resultNumber"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-danger">New Game</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
