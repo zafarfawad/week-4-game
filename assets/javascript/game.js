@@ -45,21 +45,15 @@ $("img").on("click", function () {
         $("#gameStatusResult").html("You Won!!")
         $("#winCount").html(wins);
         counter = 0;
-        $("#resultNumber").empty();
-
-    }
-
+    } 
     else if (counter > targetNumber) {
-
         losses++;
-        $("#gameStatusResult").html("you lost!! ")
+        $("#gameStatusResult").html("you lost!!")
         $("#lossCount").html(losses);
         counter = 0;
     }
-
 });
 
 $("button").click(function () {
-    location.reload(true)
-    // $("#randomNumber").empty();
+    location.reload();
 });

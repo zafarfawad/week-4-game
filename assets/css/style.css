@@ -1,8 +1,11 @@
 html,
 body {
+    background-image: url("../images/backgroundCrystal.jpg");
     margin: 0;
     padding: 0;
 }
+
+
 p{
     background-color:  pink;
 }
@@ -24,15 +27,30 @@ p{
 }
 
 .thumbnail{
-    height: 100px;
+    height: 80px;
+    width: 100px;
 }
 
-.col-xs-2,
-.pictureFrame{
-    width: 10%;
-}
+/* .pictureFrame{
+    width: 55%;
+} */
 
 
 .resultPanel{
     height: 10%;
+}
+
+.green{
+background-color: green;
+
+}
+
+/* .darkgreen{
+    background-color: darkolivegreen;
+    color: white;
+
+} */
+
+.blue{
+background-color: blue;
 }
